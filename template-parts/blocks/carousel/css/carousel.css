@@ -1,0 +1,20 @@
+/* .bgc-carousel {
+    width:100%;
+} */
+
+.splide__slide a{
+    box-shadow: 0 5px 5px 0 rgb(18 63 82 / 4%), 0 0 0 1px rgb(176 181 193 / 20%);
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 10px;
+    display: block;
+}
+
+.splide__pagination {
+    top: 150px;
+}
+
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
+    border: none;
+}

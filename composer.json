@@ -1,0 +1,16 @@
+{
+    "name": "mrkwp/mrkwp-block",
+    "description": "Plugin by MRK Development",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "MRK Development",
+            "email": "helpdesk@mrkwp.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"MRKWP_Block\\": "./core"}
+    }
+}
