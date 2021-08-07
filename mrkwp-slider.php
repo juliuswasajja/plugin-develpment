@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:     MRKWP Block
+ * Plugin Name:     MRKWP Slider
  * Plugin URI:      https://www.mrkwp.com
  * Description:     Block plugin that implements a carousel using ACF
  * Author:          Julius
  * Author URI:      
  * Version:         0.1.0
- * Text Domain:     mrkwp-block-library
- * @package mrkwpblock
+ * Text Domain:     mrkwp-slider-library
+ * @package mrkwpslider
  * 
  */
 
@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) or die( 'No Access!' );
 /**
  * Initialize all the core classes of the plugin.
  */
-if ( class_exists( 'MRKWP_Block\\Init' ) ) {
-	MRKWP_Block\Init::register_services();
+if ( class_exists( 'MRKWP_Slider\\Init' ) ) {
+	MRKWP_Slider\Init::register_services();
 }
 

@@ -1,8 +1,8 @@
 <?php 
 /**
- * @package MRKWP_Block
+ * @package MRKWP_Slider
  */
-namespace MRKWP_Block\Base;
+namespace MRKWP_Slider\Base;
 
 // use get_field;
 
@@ -18,7 +18,7 @@ class BaseController
 	public function __construct() {
 		$this->plugin_path = plugin_dir_path( dirname( __FILE__, 2 ) );
 		$this->plugin_url  = plugin_dir_url( dirname( __FILE__, 2 ) );
-		$this->plugin      = plugin_basename( dirname( __FILE__, 3 ) ) . '/mrkwp-block.php';
+		$this->plugin      = plugin_basename( dirname( __FILE__, 3 ) ) . '/mrkwp-slider.php';
 		
     }
 }

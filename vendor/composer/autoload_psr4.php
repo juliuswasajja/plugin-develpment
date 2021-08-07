@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'MRKWP_Block\\' => array($baseDir . '/core'),
+    'MRKWP_Slider\\' => array($baseDir . '/core'),
 );

@@ -1,5 +1,5 @@
 {
-    "name": "mrkwp/mrkwp-block",
+    "name": "mrkwp/mrkwp-slider",
     "description": "Plugin by MRK Development",
     "type": "project",
     "license": "GPLv2",
@@ -11,6 +11,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"MRKWP_Block\\": "./core"}
+        "psr-4": {"MRKWP_Slider\\": "./core"}
     }
 }

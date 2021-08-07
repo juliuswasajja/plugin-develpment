@@ -1,16 +1,16 @@
 <?php
 /**
- * @package  MRKWP_Block
+ * @package  MRKWP_Slider
  */
-namespace MRKWP_Block\Blocks;
+namespace MRKWP_Slider\Blocks;
 
-use MRKWP_Block\Base\BaseController;
+use MRKWP_Slider\Base\BaseController;
 
 /**
  * Handle the tech drawings toolset.
  */
 
- class block extends BaseController{
+ class slider extends BaseController{
 
 	/**
 	 * Register function is called by default to get the class running
@@ -18,8 +18,8 @@ use MRKWP_Block\Base\BaseController;
 	 * @return void
 	 */
 	public function register() {
-		add_action( 'acf/init' , [ $this, 'init_carousel_block' ], 9);
-		add_action( 'acf/init' , [ $this, 'init_acf_carousel_fields' ], 10);
+		add_action( 'acf/init' , [ $this, 'init_slider_block' ], 9);
+		add_action( 'acf/init' , [ $this, 'init_acf_slider_fields' ], 10);
 	}
 
 	/**
@@ -27,15 +27,15 @@ use MRKWP_Block\Base\BaseController;
 	 * 
 	 * @return void
 	 */
-	public function init_carousel_block() {
+	public function init_slider_block() {
 
 		if( function_exists('acf_register_block_type') ) {
 
 			// register the gallery block
 			acf_register_block_type(array(
-				'name'              => 'mrkwpcarousel',
-				'title'             => __('Carousel'),
-				'description'       => __('Block for Carousel.'),
+				'name'              => 'mrkwpslider',
+				'title'             => __('Slider'),
+				'description'       => __('Slider or call it carousel.'),
 				'render_template'   => $this->plugin_path .'template-parts/blocks/carousel/carousel.php',
 				'category'          => 'formatting',
 				'icon'              => 'media-code',
@@ -58,13 +58,13 @@ use MRKWP_Block\Base\BaseController;
 	 *
 	 * @return void
 	 */
-	public function init_acf_carousel_fields()  {
+	public function init_acf_slider_fields()  {
 
 		if( function_exists('acf_add_local_field_group') ):
 
 			acf_add_local_field_group(array(
 				'key' => 'group_60e6c2835d829',
-				'title' => 'Carousel',
+				'title' => 'Slider',
 				'fields' => array(
 					array(
 						'key' => 'field_60e6c2b01691e',

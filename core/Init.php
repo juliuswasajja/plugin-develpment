@@ -1,8 +1,8 @@
 <?php
 /**
- * @package  MRKWP_Block.
+ * @package  MRKWP_Slider.
  */
-namespace MRKWP_Block;
+namespace MRKWP_Slider;
 
 final class Init
 {
@@ -14,7 +14,7 @@ final class Init
 	{
 		return [
 			// Base\Enqueue::class,
-            Blocks\Block::class,
+            Blocks\Slider::class,
         ];
     }
 

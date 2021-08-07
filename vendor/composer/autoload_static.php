@@ -9,12 +9,12 @@ class ComposerStaticInit981427c29cd1d09373f74daa1b60d993
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
-            'MRKWP_Block\\' => 12,
+            'MRKWP_Slider\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'MRKWP_Block\\' => 
+        'MRKWP_Slider\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),

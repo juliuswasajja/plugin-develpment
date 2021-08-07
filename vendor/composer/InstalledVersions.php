@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => 'mrkwp/mrkwp-block',
+    'reference' => '1011d7d966796e453c064917d65e45dc14b0f1ed',
+    'name' => 'mrkwp/mrkwp-slider',
   ),
   'versions' => 
   array (
-    'mrkwp/mrkwp-block' => 
+    'mrkwp/mrkwp-slider' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '1011d7d966796e453c064917d65e45dc14b0f1ed',
     ),
   ),
 );
