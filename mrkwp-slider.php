@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name:     MRKWP Block
  * Plugin URI:      https://www.mrkwp.com
