@@ -9,14 +9,14 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-$id = 'mrk-carousel-' . $block['id'];
+$id = 'mrk-slider-' . $block['id'];
 
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'mrk-carousel splide';
+$className = 'mrk-slider splide';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -55,7 +55,7 @@ $carousel_items = get_field('carousel_icons');
         <?php
 
     } else {
-        $message = __( 'Please add some Images and links for this work', 'bgc-library' );
+        $message = __( 'Please add some Images and links for this work', 'mrk-slider' );
         printf(
             '<p><strong>%s</strong></p>',
             $message,

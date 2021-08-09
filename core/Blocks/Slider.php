@@ -10,7 +10,7 @@ use MRKWP_Slider\Base\BaseController;
  * Handle the tech drawings toolset.
  */
 
- class slider extends BaseController{
+class Slider extends BaseController{
 
 	/**
 	 * Register function is called by default to get the class running
@@ -35,14 +35,14 @@ use MRKWP_Slider\Base\BaseController;
 			acf_register_block_type(array(
 				'name'              => 'mrkwpslider',
 				'title'             => __('Slider'),
-				'description'       => __('Slider or call it carousel.'),
+				'description'       => __('Slider for Code Practice'),
 				'render_template'   => $this->plugin_path .'template-parts/blocks/carousel/carousel.php',
 				'category'          => 'formatting',
 				'icon'              => 'media-code',
-				'keywords'          => array( 'carousel', 'mrk' ),
+				'keywords'          => array( 'slider', 'mrk' ),
 				'enqueue_assets'  => function() {
 					wp_enqueue_style( 'splide-min', $this->plugin_url . 'template-parts/blocks/carousel/css/splide-core.min.css' );
-					wp_enqueue_style( 'mrkwp-carousel', $this->plugin_url . 'template-parts/blocks/carousel/css/carousel.css' );
+					wp_enqueue_style( 'mrkwp-slider', $this->plugin_url . 'template-parts/blocks/carousel/css/carousel.css' );
 
 					wp_enqueue_script( 'splide-js', $this->plugin_url. 'template-parts/blocks/carousel/js/splide.min.js', [], '2.4.20', true );
 					wp_enqueue_script( 'splide-js-settings', $this->plugin_url. 'template-parts/blocks/carousel/js/slider-settings.js', array('splide-js'), '1.0.0', true );
@@ -54,7 +54,7 @@ use MRKWP_Slider\Base\BaseController;
 	}
 
 	/**
-	 * Initialise Carousel Block fields.
+	 * Initialise Slider Block fields.
 	 *
 	 * @return void
 	 */
@@ -68,8 +68,8 @@ use MRKWP_Slider\Base\BaseController;
 				'fields' => array(
 					array(
 						'key' => 'field_60e6c2b01691e',
-						'label' => 'Carousel Icons',
-						'name' => 'carousel_icons',
+						'label' => 'Slider Icons',
+						'name' => 'slider_icons',
 						'type' => 'repeater',
 						'instructions' => 'Add your images and links here.',
 						'required' => 1,
@@ -133,7 +133,7 @@ use MRKWP_Slider\Base\BaseController;
 						array(
 							'param' => 'block',
 							'operator' => '==',
-							'value' => 'acf/mrkwpcarousel',
+							'value' => 'acf/mrkwpslider',
 						),
 					),
 				),
